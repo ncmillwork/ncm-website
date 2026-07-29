@@ -1,314 +1,417 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>National Custom Millwork — Architectural Millwork in Beltsville, MD</title>
-  <meta name="description" content="High-end architectural millwork, custom casework, and residential woodwork — fabricated and installed by National Custom Millwork in Beltsville, Maryland since 2006.">
-  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
-  <link rel="apple-touch-icon" href="assets/img/logo.png">
-  <meta property="og:title" content="National Custom Millwork">
-  <meta property="og:description" content="Fine architectural millwork, crafted and installed in the DC region since 2006.">
-  <meta property="og:image" content="https://nationalcustommillwork.com/wp-content/uploads/2021/07/RJO4940-scaled.jpg">
-  <meta property="og:type" content="website">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..600&family=Inter:wght@400..600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "National Custom Millwork",
-    "description": "High-end architectural millwork and custom residential woodwork, fabricated and installed since 2006.",
-    "telephone": "+1-301-595-4448",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "11417 Somerset Ave",
-      "addressLocality": "Beltsville",
-      "addressRegion": "MD",
-      "postalCode": "20705",
-      "addressCountry": "US"
-    },
-    "openingHours": "Mo-Fr 07:00-16:00",
-    "foundingDate": "2006",
-    "sameAs": [
-      "https://www.instagram.com/ncmillwork/",
-      "https://www.tiktok.com/@ncmillwork",
-      "https://www.youtube.com/@ncmillwork"
-    ]
-  }
-  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>National Custom Millwork — Architectural Millwork · Beltsville, MD</title>
+  <meta name="description" content="High-end architectural millwork, custom casework, kitchens and vanities. Every piece cut, finished and installed in-house since 2006. Beltsville, Maryland." />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=2" />
 </head>
-<body>
-  <a class="skip-link" href="#main">Skip to content</a>
+<body class="is-loading" data-theme="dark">
 
+  <!-- Preloader -->
+  <div class="preloader" aria-hidden="true">
+    <div class="preloader__planks"><i></i><i></i><i></i></div>
+    <div class="preloader__inner">
+      <span class="preloader__label">National Custom Millwork</span>
+      <span class="preloader__tag">Beltsville, Maryland — Est. 2006</span>
+      <span class="preloader__count">00</span>
+    </div>
+  </div>
+
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Header -->
   <header class="site-header">
-    <div class="container--wide container">
-      <a class="brand" href="index.html" aria-label="National Custom Millwork — home">
-        <img src="assets/img/logo.png" alt="" width="42" height="35">
-        <span class="brand-name">National Custom Millwork
-          <small>Beltsville · Maryland</small>
-        </span>
-      </a>
-      <nav class="site-nav" aria-label="Primary">
-        <a href="index.html" aria-current="page">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html" class="btn">Start a project</a>
-      </nav>
-      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
+    <a class="wordmark" href="#top" data-scroll>
+      <span class="wordmark__initials">NCM</span>
+      <span class="wordmark__full">National Custom Millwork</span>
+    </a>
+    <nav class="header-nav" aria-label="Primary">
+      <a href="#craft" data-scroll>Craft</a>
+      <a href="#work" data-scroll>Work</a>
+      <a href="#company" data-scroll>Company</a>
+    </nav>
+    <div class="header-right">
+      <a class="cta" href="#contact" data-scroll>Start a project</a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="menu">
+        <em>Menu</em>
+        <span class="menu-toggle__lines"><i></i><i></i></span>
       </button>
     </div>
   </header>
 
-  <nav class="mobile-menu" aria-label="Mobile">
-    <a href="index.html" aria-current="page">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
+  <!-- Fullscreen menu -->
+  <nav id="menu" class="menu" aria-hidden="true">
+    <div class="menu__inner">
+      <ol class="menu__list">
+        <li style="--i:0"><a href="#top" data-scroll><small>01</small>Index</a></li>
+        <li style="--i:1"><a href="#belief" data-scroll><small>02</small>The Belief</a></li>
+        <li style="--i:2"><a href="#craft" data-scroll><small>03</small>The Craft</a></li>
+        <li style="--i:3"><a href="#work" data-scroll><small>04</small>Selected Work</a></li>
+        <li style="--i:4"><a href="#archive" data-scroll><small>05</small>Archive</a></li>
+        <li style="--i:5"><a href="#company" data-scroll><small>06</small>Company</a></li>
+        <li style="--i:6"><a href="#contact" data-scroll><small>07</small>Contact</a></li>
+      </ol>
+      <div class="menu__meta">
+        <div>
+          <span class="micro">Workshop</span>
+          <p>11417 Somerset Ave<br />Beltsville, MD 20705</p>
+        </div>
+        <div>
+          <span class="micro">Contact</span>
+          <p><a href="tel:+13015954448">(301) 595-4448</a><br />Mon–Fri, 7am–4pm</p>
+        </div>
+        <div>
+          <span class="micro">Follow</span>
+          <p>
+            <a href="https://www.instagram.com/ncmillwork/" target="_blank" rel="noopener">Instagram</a><br />
+            <a href="https://www.tiktok.com/@ncmillwork" target="_blank" rel="noopener">TikTok</a><br />
+            <a href="https://www.youtube.com/@ncmillwork" target="_blank" rel="noopener">YouTube</a>
+          </p>
+        </div>
+      </div>
+    </div>
   </nav>
 
-  <main id="main">
+  <main id="top">
 
-    <!-- ============ Hero ============ -->
-    <section class="hero">
-      <div class="hero-bg">
-        <img src="assets/img/hero.jpg" alt="Custom walnut millwork reception area fabricated by NCM" fetchpriority="high">
+    <!-- ========== HERO ========== -->
+    <section class="hero" data-theme="dark">
+      <div class="hero__slides" aria-hidden="true">
+        <figure class="hero__slide is-active"><img src="assets/hero.jpg" alt="" /></figure>
+        <figure class="hero__slide"><img src="assets/morning-1.jpg" alt="" /></figure>
+        <figure class="hero__slide"><img src="assets/kstreet-1.jpg" alt="" /></figure>
+        <figure class="hero__slide"><img src="assets/revival-1.jpg" alt="" /></figure>
+        <figure class="hero__slide"><img src="assets/neustar-1.jpg" alt="" /></figure>
       </div>
-      <div class="container hero-content">
-        <p class="eyebrow">Architectural Millwork — Beltsville, Maryland</p>
-        <h1>Custom millwork, <em>crafted</em> to endure.</h1>
-        <p class="lede">From concept to installation, NCM fabricates high-end architectural woodwork for the region's most demanding commercial and residential spaces — and has since 2006.</p>
-        <div class="hero-actions">
-          <a class="btn" href="projects.html">Explore our work <span class="arrow">→</span></a>
-          <a class="btn btn--ghost" href="contact.html">Start a project</a>
-        </div>
-        <div class="hero-meta">
-          <span><i class="dot"></i>Since 2006</span>
-          <span><i class="dot"></i>10,000 sq ft shop</span>
-          <span><i class="dot"></i>Fabrication + installation</span>
-          <span><i class="dot"></i>AWI standards</span>
-        </div>
+      <div class="hero__veil" aria-hidden="true"></div>
+
+      <div class="hero__top micro reveal">
+        <span>Architectural Millwork</span>
+        <span class="availability"><i class="dot"></i>Taking new projects</span>
+        <span>Est. 2006 — Beltsville, MD</span>
+      </div>
+
+      <h1 class="hero__title">
+        <span class="line"><span class="line__inner">National</span></span>
+        <span class="line"><span class="line__inner hero__title-mid"><em>Custom</em></span></span>
+        <span class="line"><span class="line__inner">Millwork</span></span>
+      </h1>
+
+      <div class="hero__bottom micro reveal" style="--d:1s">
+        <span class="hero__scrollcue">Scroll<i></i></span>
+        <span>Every piece cut, finished &amp; installed by our own hands</span>
       </div>
     </section>
 
-    <!-- ============ Client marquee ============ -->
-    <div class="clients" aria-label="Selected clients">
-      <p class="clients-label">Trusted by</p>
-      <div class="marquee">
-        <ul class="marquee-track">
-          <li>Disney</li>
-          <li>Airbus</li>
-          <li>Procore</li>
-          <li>Joola</li>
-          <li>Neustar</li>
-          <li>Morning Consult</li>
-          <li>Hotel Revival</li>
-          <li>Avalon</li>
-          <li>Fish Shop DC</li>
-        </ul>
-        <ul class="marquee-track" aria-hidden="true">
-          <li>Disney</li>
-          <li>Airbus</li>
-          <li>Procore</li>
-          <li>Joola</li>
-          <li>Neustar</li>
-          <li>Morning Consult</li>
-          <li>Hotel Revival</li>
-          <li>Avalon</li>
-          <li>Fish Shop DC</li>
-        </ul>
+    <!-- ========== MANIFESTO ========== -->
+    <section id="belief" class="section manifesto" data-theme="paper">
+      <div class="section__head reveal">
+        <span class="micro">01 — The Belief</span>
+      </div>
+      <p class="scrub" data-scrub>We believe a room is only as honest as its joinery. For twenty years we have cut, sanded, finished and installed every piece that carries our name — no subcontractors, no shortcuts, no excuses. From a ten-thousand square foot shop in Beltsville, Maryland, our work travels into boardrooms, hotels, restaurants and quiet family kitchens. Wood remembers the hands that shape it. We make sure it remembers care.</p>
+    </section>
+
+    <!-- clients marquee -->
+    <div class="marquee" data-theme="paper" aria-label="Clients">
+      <div class="marquee__track">
+        <span>Disney <i>◆</i> Airbus <i>◆</i> Neustar <i>◆</i> Procore <i>◆</i> Morning Consult <i>◆</i> Joola <i>◆</i> Hotel Revival <i>◆</i> Fish Shop DC <i>◆</i>&nbsp;</span>
+        <span>Disney <i>◆</i> Airbus <i>◆</i> Neustar <i>◆</i> Procore <i>◆</i> Morning Consult <i>◆</i> Joola <i>◆</i> Hotel Revival <i>◆</i> Fish Shop DC <i>◆</i>&nbsp;</span>
       </div>
     </div>
 
-    <!-- ============ Services ============ -->
-    <section aria-labelledby="services-title">
-      <div class="container">
-        <div class="section-head reveal">
-          <p class="eyebrow">What we build</p>
-          <h2 id="services-title">One shop, every trade of fine woodwork.</h2>
-          <p class="lede">Everything is fabricated in-house at our Beltsville facility and installed by our own team — no middlemen, no hand-offs.</p>
-        </div>
-        <div class="services-grid">
-          <article class="service-card reveal" style="--d:.0s">
-            <span class="num">01</span>
-            <h3>Custom Kitchens</h3>
-            <p>Bespoke kitchens built to the millimeter, from classic paint-grade to book-matched veneer.</p>
-          </article>
-          <article class="service-card reveal" style="--d:.05s">
-            <span class="num">02</span>
-            <h3>Wood &amp; Laminate Casework</h3>
-            <p>Commercial-grade casework engineered for daily use in offices, labs, and hospitality.</p>
-          </article>
-          <article class="service-card reveal" style="--d:.1s">
-            <span class="num">03</span>
-            <h3>Wall Panels</h3>
-            <p>Flat, fluted, and acoustic paneling that turns walls into architecture.</p>
-          </article>
-          <article class="service-card reveal" style="--d:.15s">
-            <span class="num">04</span>
-            <h3>Reception Desks</h3>
-            <p>Statement front desks — the first thing your clients see, built to impress.</p>
-          </article>
-          <article class="service-card reveal" style="--d:.2s">
-            <span class="num">05</span>
-            <h3>Conference Tables</h3>
-            <p>Boardroom centerpieces in solid wood and veneer, wired for the modern office.</p>
-          </article>
-          <article class="service-card reveal" style="--d:.25s">
-            <span class="num">06</span>
-            <h3>Vanities &amp; Built-ins</h3>
-            <p>Fitted units and bath millwork that make every inch of a room work.</p>
-          </article>
-          <article class="service-card reveal" style="--d:.3s">
-            <span class="num">07</span>
-            <h3>Entry Doors</h3>
-            <p>Custom doors and frames crafted for presence, weight, and longevity.</p>
-          </article>
-          <article class="service-card reveal" style="--d:.35s">
-            <span class="num">08</span>
-            <h3>Solid Surface Countertops</h3>
-            <p>Seamless counters fabricated and templated in-house for a perfect fit.</p>
-          </article>
-        </div>
-        <p class="services-note reveal"><strong>Fabricated in-house. Installed by our own crew.</strong> One point of responsibility from shop drawing to final walkthrough.</p>
+    <!-- ========== CRAFT — sticky card deck ========== -->
+    <section id="craft" class="section craft" data-theme="paper">
+      <div class="section__head reveal">
+        <span class="micro">02 — The Craft</span>
+        <h2 class="section__title">Seven disciplines.<br /><em>One standard.</em></h2>
       </div>
-    </section>
 
-    <!-- ============ The shop ============ -->
-    <section class="on-dark grain" aria-labelledby="shop-title">
-      <div class="container split">
-        <div class="split-media reveal">
-          <img src="assets/img/projects/morningconsult-3.jpg" alt="Custom reception desk fabricated by NCM for Morning Consult" loading="lazy" width="1024" height="683">
-          <p class="badge"><strong>Since 2006</strong>same hands,<br>same standard</p>
-        </div>
-        <div class="split-copy">
-          <div class="section-head reveal">
-            <p class="eyebrow">The shop</p>
-            <h2 id="shop-title">Cabinetmakers first, contractors second.</h2>
+      <div class="stack">
+        <article class="card" data-card>
+          <div class="card__text">
+            <span class="card__num">01</span>
+            <h3 class="card__name">Custom Casework</h3>
+            <p class="card__desc">Wood and plastic-laminate casework, engineered in-house and built to print. The backbone of every project we ship.</p>
           </div>
-          <p class="reveal">National Custom Millwork is a 10,000-square-foot fabrication shop in Beltsville, Maryland, equipped with state-of-the-art machinery and staffed by cabinetmakers who have been doing custom work for decades.</p>
-          <p class="reveal">When you work with NCM, you work directly with the people who build — not a broker. That's why most of our work comes from repeat clients and word of mouth.</p>
-          <div class="split-actions reveal">
-            <a class="link-arrow" href="about.html">More about us <span class="arrow">→</span></a>
+          <div class="card__media"><img src="assets/projects/neustar/01.jpg" alt="Custom casework" loading="lazy" /></div>
+        </article>
+        <article class="card" data-card>
+          <div class="card__text">
+            <span class="card__num">02</span>
+            <h3 class="card__name">Wall Panels</h3>
+            <p class="card__desc">Architectural paneling for lobbies, workplaces and hospitality — matched grain, hairline reveals, seamless runs.</p>
           </div>
-          <div class="stats">
-            <div class="stat reveal" style="--d:.0s"><strong>19<sup>+</sup></strong><span>Years in business</span></div>
-            <div class="stat reveal" style="--d:.07s"><strong>10K</strong><span>Sq ft facility</span></div>
-            <div class="stat reveal" style="--d:.14s"><strong>100<sup>+</sup></strong><span>Projects delivered</span></div>
+          <div class="card__media"><img src="assets/projects/morning/01.jpg" alt="Architectural wall panels" loading="lazy" /></div>
+        </article>
+        <article class="card" data-card>
+          <div class="card__text">
+            <span class="card__num">03</span>
+            <h3 class="card__name">Reception Desks</h3>
+            <p class="card__desc">The first thing a visitor touches. Statement pieces that anchor a space and hold up to decades of first impressions.</p>
+          </div>
+          <div class="card__media"><img src="assets/projects/kstreet/01.jpg" alt="Custom reception desk" loading="lazy" /></div>
+        </article>
+        <article class="card" data-card>
+          <div class="card__text">
+            <span class="card__num">04</span>
+            <h3 class="card__name">Entry Doors</h3>
+            <p class="card__desc">Custom doors built square, hung true, and made to open cleanly for as long as the building stands.</p>
+          </div>
+          <div class="card__media"><img src="assets/projects/revival/02.jpg" alt="Custom entry millwork" loading="lazy" /></div>
+        </article>
+        <article class="card" data-card>
+          <div class="card__text">
+            <span class="card__num">05</span>
+            <h3 class="card__name">Solid Surface Tops</h3>
+            <p class="card__desc">Fabricated and finished to a seamless edge — counters and tops that read as a single poured piece.</p>
+          </div>
+          <div class="card__media"><img src="assets/projects/fishshop/01.jpg" alt="Solid surface fabrication" loading="lazy" /></div>
+        </article>
+        <article class="card" data-card>
+          <div class="card__text">
+            <span class="card__num">06</span>
+            <h3 class="card__name">Conference Tables</h3>
+            <p class="card__desc">One-of-a-kind tables for the rooms where decisions get made. Built around your power, data and grain direction.</p>
+          </div>
+          <div class="card__media"><img src="assets/projects/airbus/01.jpg" alt="Custom conference table" loading="lazy" /></div>
+        </article>
+        <article class="card" data-card>
+          <div class="card__text">
+            <span class="card__num">07</span>
+            <h3 class="card__name">Kitchens &amp; Vanities</h3>
+            <p class="card__desc">Residential kitchens, vanities and custom fit-in units — the same shop discipline, brought home.</p>
+          </div>
+          <div class="card__media"><img src="assets/projects/dahlkemper/01.jpg" alt="Custom kitchen" loading="lazy" /></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ========== SELECTED WORK — horizontal ========== -->
+    <section id="work" class="hwrap" data-theme="dark">
+      <div class="hpin">
+        <div class="htrack">
+          <div class="hpanel hpanel--intro">
+            <span class="micro">03 — Selected Work</span>
+            <h2 class="hpanel__title">Twelve<br /><em>projects.</em><br />One shop.</h2>
+            <span class="micro hpanel__hint">Keep scrolling <i>→</i></span>
+          </div>
+
+          <figure class="hpanel hpanel--project" data-project="disney" data-cursor="Open">
+            <span class="hpanel__ghost" aria-hidden="true">01</span>
+            <div class="hpanel__media"><img src="assets/disney-1.jpg" alt="Disney project millwork" loading="lazy" /></div>
+            <figcaption><span class="hpanel__name">Disney</span><span class="micro">Corporate — 20 photographs</span></figcaption>
+          </figure>
+
+          <figure class="hpanel hpanel--project" data-project="joola" data-cursor="Open">
+            <span class="hpanel__ghost" aria-hidden="true">02</span>
+            <div class="hpanel__media"><img src="assets/joola-1.jpg" alt="Joola showroom millwork" loading="lazy" /></div>
+            <figcaption><span class="hpanel__name">Joola</span><span class="micro">Retail &amp; Showroom — 8 photographs</span></figcaption>
+          </figure>
+
+          <figure class="hpanel hpanel--project" data-project="fishshop" data-cursor="Open">
+            <span class="hpanel__ghost" aria-hidden="true">03</span>
+            <div class="hpanel__media"><img src="assets/fishshop-1.jpg" alt="Fish Shop DC millwork" loading="lazy" /></div>
+            <figcaption><span class="hpanel__name">Fish Shop DC</span><span class="micro">Restaurant — 12 photographs</span></figcaption>
+          </figure>
+
+          <figure class="hpanel hpanel--project" data-project="revival" data-cursor="Open">
+            <span class="hpanel__ghost" aria-hidden="true">04</span>
+            <div class="hpanel__media"><img src="assets/revival-1.jpg" alt="Hotel Revival millwork" loading="lazy" /></div>
+            <figcaption><span class="hpanel__name">Hotel Revival</span><span class="micro">Hospitality · Baltimore — 6 photographs</span></figcaption>
+          </figure>
+
+          <figure class="hpanel hpanel--project" data-project="morning" data-cursor="Open">
+            <span class="hpanel__ghost" aria-hidden="true">05</span>
+            <div class="hpanel__media"><img src="assets/morning-1.jpg" alt="Morning Consult millwork" loading="lazy" /></div>
+            <figcaption><span class="hpanel__name">Morning Consult</span><span class="micro">Workplace · Washington, D.C. — 6 photographs</span></figcaption>
+          </figure>
+
+          <figure class="hpanel hpanel--project" data-project="airbus" data-cursor="Open">
+            <span class="hpanel__ghost" aria-hidden="true">06</span>
+            <div class="hpanel__media"><img src="assets/airbus-1.jpg" alt="Airbus millwork" loading="lazy" /></div>
+            <figcaption><span class="hpanel__name">Airbus</span><span class="micro">Workplace — 6 photographs</span></figcaption>
+          </figure>
+
+          <div class="hpanel hpanel--end">
+            <h2 class="hpanel__title">Six more<br />in the <em>archive.</em></h2>
+            <span class="micro hpanel__hint">Keep scrolling <i>↓</i></span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ============ Featured work ============ -->
-    <section aria-labelledby="work-title">
-      <div class="container">
-        <div class="section-head reveal">
-          <p class="eyebrow">Selected work</p>
-          <h2 id="work-title">Built for names you know.</h2>
-        </div>
-        <div class="work-grid">
-          <a class="work-card reveal" style="--d:.0s" href="projects.html">
-            <figure>
-              <img src="assets/img/projects/disney-1.jpg" alt="Custom millwork for Disney offices" loading="lazy" width="1024" height="768">
-            </figure>
-            <figcaption>
-              <span class="name">Disney</span>
-              <span class="cat">Commercial</span>
-            </figcaption>
-          </a>
-          <a class="work-card reveal" style="--d:.08s" href="projects.html">
-            <figure>
-              <img src="assets/img/projects/fishshop-1.jpg" alt="Restaurant millwork at Fish Shop DC" loading="lazy" width="1024" height="768">
-            </figure>
-            <figcaption>
-              <span class="name">Fish Shop DC</span>
-              <span class="cat">Hospitality</span>
-            </figcaption>
-          </a>
-          <a class="work-card reveal" style="--d:.16s" href="projects.html">
-            <figure>
-              <img src="assets/img/projects/morningconsult-1.jpg" alt="Office millwork for Morning Consult" loading="lazy" width="1024" height="683">
-            </figure>
-            <figcaption>
-              <span class="name">Morning Consult</span>
-              <span class="cat">Commercial</span>
-            </figcaption>
-          </a>
-        </div>
-        <p class="work-more reveal"><a class="btn btn--ghost" href="projects.html">View all projects <span class="arrow">→</span></a></p>
+    <!-- ========== ARCHIVE ========== -->
+    <section id="archive" class="section archive" data-theme="dark">
+      <div class="section__head reveal">
+        <span class="micro">04 — Archive</span>
+        <h2 class="section__title">Every project<br /><em>opens.</em></h2>
+      </div>
+      <ul class="rows">
+        <li class="row reveal" data-project="procore" data-preview="assets/projects/procore/01.jpg" data-cursor="Open" tabindex="0">
+          <span class="row__num">07</span><span class="row__name">Procore</span><span class="row__desc">Workplace — 10 photographs</span>
+        </li>
+        <li class="row reveal" data-project="kstreet" data-preview="assets/projects/kstreet/01.jpg" data-cursor="Open" tabindex="0">
+          <span class="row__num">08</span><span class="row__name">1101 K Street</span><span class="row__desc">Workplace · Washington, D.C. — 6 photographs</span>
+        </li>
+        <li class="row reveal" data-project="merrifield" data-preview="assets/projects/merrifield/01.jpg" data-cursor="Open" tabindex="0">
+          <span class="row__num">09</span><span class="row__name">Merrifield</span><span class="row__desc">Mixed use — 6 photographs</span>
+        </li>
+        <li class="row reveal" data-project="avalon" data-preview="assets/projects/avalon/01.jpg" data-cursor="Open" tabindex="0">
+          <span class="row__num">10</span><span class="row__name">Avalon Court House</span><span class="row__desc">Residential — 6 photographs</span>
+        </li>
+        <li class="row reveal" data-project="dahlkemper" data-preview="assets/projects/dahlkemper/01.jpg" data-cursor="Open" tabindex="0">
+          <span class="row__num">11</span><span class="row__name">Dahlkemper Kitchen</span><span class="row__desc">Residential kitchen — 6 photographs</span>
+        </li>
+        <li class="row reveal" data-project="neustar" data-preview="assets/projects/neustar/01.jpg" data-cursor="Open" tabindex="0">
+          <span class="row__num">12</span><span class="row__name">Neustar</span><span class="row__desc">Workplace — 6 photographs</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ========== NUMBERS ========== -->
+    <section class="section numbers" data-theme="paper">
+      <div class="stats">
+        <div class="stat reveal" style="--d:.05s"><strong><span class="num" data-count="20">20</span></strong><span class="micro">Years of craft — Est. 2006</span></div>
+        <div class="stat reveal" style="--d:.15s"><strong><span class="num" data-count="10000" data-comma>10,000</span><sup>sq ft</sup></strong><span class="micro">Fabrication facility, state-of-the-art machinery</span></div>
+        <div class="stat reveal" style="--d:.25s"><strong><span class="num" data-count="100">100</span>%</strong><span class="micro">Built &amp; installed by our own team</span></div>
+        <div class="stat reveal" style="--d:.35s"><strong>AWI</strong><span class="micro">Architectural Woodwork Institute member</span></div>
       </div>
     </section>
 
-    <!-- ============ Quote ============ -->
-    <section class="on-dark grain quote-band">
-      <div class="container">
-        <blockquote class="reveal">
-          “Our quality is number one. Every project leaves this shop the way we'd want it in <em>our own</em> home.”
-        </blockquote>
-        <cite class="reveal">— The NCM team</cite>
+    <!-- ========== QUOTE ========== -->
+    <section class="quote" data-theme="paper">
+      <blockquote>
+        <p class="quote__text">
+          <span class="line"><span class="line__inner">&ldquo;Our quality is number one.</span></span>
+          <span class="line"><span class="line__inner">The hands that build your project</span></span>
+          <span class="line"><span class="line__inner">are the hands that <em>install it</em>.&rdquo;</span></span>
+        </p>
+        <footer class="quote__by reveal">
+          <span class="quote__sig">Donald Castro</span>
+          <span class="micro">President, National Custom Millwork</span>
+        </footer>
+      </blockquote>
+    </section>
+
+    <!-- ========== PROCESS ========== -->
+    <section class="section process" data-theme="paper">
+      <div class="section__head reveal">
+        <span class="micro">05 — The Process</span>
+        <h2 class="section__title">From print<br /><em>to place.</em></h2>
+      </div>
+      <ol class="steps">
+        <li class="step reveal" style="--d:.0s"><span class="step__num">01</span><h3>Consult</h3><p>We read your drawings, walk your site, and price the work honestly — directly with you, no middlemen.</p></li>
+        <li class="step reveal" style="--d:.1s"><span class="step__num">02</span><h3>Engineer</h3><p>Every piece is drawn, dimensioned and resolved in shop drawings before a single board is cut.</p></li>
+        <li class="step reveal" style="--d:.2s"><span class="step__num">03</span><h3>Fabricate</h3><p>Cabinetmakers with decades in their hands build your project in our 10,000 sq ft Beltsville shop.</p></li>
+        <li class="step reveal" style="--d:.3s"><span class="step__num">04</span><h3>Finish</h3><p>Sanded, sealed and finished in-house — the surface your clients will touch for years.</p></li>
+        <li class="step reveal" style="--d:.4s"><span class="step__num">05</span><h3>Install</h3><p>Our own installation team delivers and sets the work. The hands that built it hang it.</p></li>
+      </ol>
+    </section>
+
+    <!-- ========== COMPANY ========== -->
+    <section id="company" class="section company" data-theme="paper">
+      <div class="section__head reveal">
+        <span class="micro">06 — Company</span>
+        <h2 class="section__title">The workshop</h2>
+      </div>
+      <div class="company__body">
+        <figure class="media-frame company__img reveal">
+          <img src="assets/company.jpg" alt="National Custom Millwork craftsmanship" data-parallax loading="lazy" />
+        </figure>
+        <div class="company__text reveal">
+          <p>National Custom Millwork is a full-service fabrication shop specializing in high-end architectural millwork and residential kitchens, vanities and custom fit-in units. Our cabinetmakers carry decades of custom work in their hands — and our in-house installation team carries it over the finish line. Most of our work arrives the way it leaves: by word of mouth.</p>
+          <ul class="team">
+            <li><span>Donald Castro</span><span class="micro">President</span><a class="micro" href="mailto:Dcastro@ncmillwork.com">Dcastro@ncmillwork.com</a></li>
+            <li><span>Marlon Montoya</span><span class="micro">Vice President</span><a class="micro" href="mailto:Mmontoya@ncmillwork.com">Mmontoya@ncmillwork.com</a></li>
+            <li><span>Brian Montoya</span><span class="micro">General Manager</span><a class="micro" href="mailto:brian@ncmillwork.com">brian@ncmillwork.com</a></li>
+          </ul>
+        </div>
       </div>
     </section>
 
-    <!-- ============ CTA ============ -->
-    <section class="on-dark cta-band" style="background: var(--espresso-2);">
-      <div class="container">
-        <p class="eyebrow reveal">Let's talk</p>
-        <h2 class="reveal">Have a project in mind?</h2>
-        <p class="lede reveal">Send us your drawings or just an idea — we'll walk you through material options, timeline, and budget.</p>
-        <div class="cta-actions reveal">
-          <a class="btn" href="contact.html">Start a project <span class="arrow">→</span></a>
-          <a class="btn btn--ghost" href="projects.html">See our work</a>
-        </div>
-        <p class="cta-phone reveal">Or call us directly — <a href="tel:+13015954448">(301) 595-4448</a></p>
+    <!-- ========== CONTACT ========== -->
+    <section id="contact" class="section contact" data-theme="dark">
+      <div class="section__head reveal">
+        <span class="micro">07 — Contact</span>
+      </div>
+      <h2 class="contact__title">
+        <span class="line"><span class="line__inner">Let&rsquo;s build something</span></span>
+        <span class="line"><span class="line__inner"><em>that lasts.</em></span></span>
+      </h2>
+      <div class="contact__links">
+        <a class="contact__link reveal" href="tel:+13015954448"><span class="micro">Call the shop</span>(301) 595-4448</a>
+        <a class="contact__link reveal" style="--d:.1s" href="https://maps.google.com/?q=11417+Somerset+Ave,+Beltsville+MD+20705" target="_blank" rel="noopener"><span class="micro">Visit</span>11417 Somerset Ave, Beltsville MD</a>
+        <div class="contact__link reveal" style="--d:.2s"><span class="micro">Hours</span>Mon–Fri, 7am–4pm</div>
       </div>
     </section>
   </main>
 
-  <!-- ============ Footer ============ -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-brand">
-        <img src="assets/img/logo.png" alt="" width="52" height="43">
-        <p class="wordmark">National Custom Millwork</p>
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer" data-theme="dark">
+    <div class="footer__grid">
+      <div class="footer__col">
+        <span class="micro">National Custom Millwork</span>
+        <p>11417 Somerset Ave<br />Beltsville, MD 20705<br />United States</p>
       </div>
-      <div class="footer-grid">
-        <div class="footer-col">
-          <h4>Visit the shop</h4>
-          <address>11417 Somerset Ave<br>Beltsville, MD 20705<br>Mon–Fri, 7 AM – 4 PM</address>
-        </div>
-        <div class="footer-col">
-          <h4>Call</h4>
-          <p><a href="tel:+13015954448">(301) 595-4448</a><br>Main office</p>
-        </div>
-        <div class="footer-col">
-          <h4>Explore</h4>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About us</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Follow</h4>
-          <ul>
-            <li><a href="https://www.instagram.com/ncmillwork/" target="_blank" rel="noopener">Instagram</a></li>
-            <li><a href="https://www.tiktok.com/@ncmillwork" target="_blank" rel="noopener">TikTok</a></li>
-            <li><a href="https://www.youtube.com/@ncmillwork" target="_blank" rel="noopener">YouTube</a></li>
-          </ul>
-        </div>
+      <div class="footer__col">
+        <span class="micro">Local time</span>
+        <p class="clock"><span id="clock">--:--:--</span> <span class="micro">Beltsville, MD</span></p>
       </div>
-      <div class="footer-bottom">
-        <p>© <span data-year>2026</span> National Custom Millwork. All rights reserved.</p>
-        <p class="awi"><img src="assets/img/awi.png" alt="" width="34" height="36"> Architectural Woodwork Institute member</p>
+      <div class="footer__col">
+        <span class="micro">Follow</span>
+        <p>
+          <a href="https://www.instagram.com/ncmillwork/" target="_blank" rel="noopener">Instagram</a><br />
+          <a href="https://www.tiktok.com/@ncmillwork" target="_blank" rel="noopener">TikTok</a><br />
+          <a href="https://www.youtube.com/@ncmillwork" target="_blank" rel="noopener">YouTube</a>
+        </p>
       </div>
+      <div class="footer__col">
+        <span class="micro">Index</span>
+        <p>
+          <a href="#belief" data-scroll>The Belief</a><br />
+          <a href="#craft" data-scroll>The Craft</a><br />
+          <a href="#work" data-scroll>Selected Work</a><br />
+          <a href="#contact" data-scroll>Contact</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer__big" aria-hidden="true">NCM</div>
+    <div class="footer__base">
+      <span class="micro">&copy; 2026 National Custom Millwork. All rights reserved.</span>
+      <span class="micro">Member — Architectural Woodwork Institute</span>
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <!-- ========== PROJECT MODAL ========== -->
+  <div class="modal" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Project gallery">
+    <div class="modal__scroll" data-lenis-prevent>
+      <header class="modal__head">
+        <button class="modal__close" data-cursor="Close"><span>&larr;</span> Close</button>
+        <div class="modal__titles">
+          <span class="micro modal__meta"></span>
+          <h2 class="modal__title"></h2>
+          <span class="micro modal__count"></span>
+        </div>
+      </header>
+      <div class="modal__gallery"></div>
+      <footer class="modal__foot">
+        <button class="modal__nav modal__nav--prev"><span class="micro">Previous</span><strong></strong></button>
+        <button class="modal__nav modal__nav--next"><span class="micro">Next</span><strong></strong></button>
+      </footer>
+    </div>
+  </div>
+
+  <!-- Floating preview + cursor -->
+  <div class="preview-float" aria-hidden="true"><img src="" alt="" /></div>
+  <div class="cursor" aria-hidden="true"><span class="cursor__dot"></span><span class="cursor__label"></span></div>
+
+  <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js" defer></script>
+  <script src="script.js?v=2" defer></script>
 </body>
 </html>
