@@ -13,7 +13,6 @@
     revival:    { name: "Hotel Revival",      meta: "Hospitality · Baltimore",          count: 6 },
     morning:    { name: "Morning Consult",    meta: "Workplace · Washington, D.C.",     count: 6 },
     airbus:     { name: "Airbus",             meta: "Workplace",                        count: 6 },
-    procore:    { name: "Procore",            meta: "Workplace",                        count: 10 },
     kstreet:    { name: "1101 K Street",      meta: "Workplace · Washington, D.C.",     count: 6 },
     merrifield: { name: "Merrifield",         meta: "Mixed use",                        count: 6 },
     avalon:     { name: "Avalon Court House", meta: "Residential",                      count: 6 },
@@ -21,7 +20,7 @@
     neustar:    { name: "Neustar",            meta: "Workplace",                        count: 6 }
   };
   var ORDER = ["disney", "joola", "fishshop", "revival", "morning", "airbus",
-               "procore", "kstreet", "merrifield", "avalon", "dahlkemper", "neustar"];
+               "kstreet", "merrifield", "avalon", "dahlkemper", "neustar"];
 
   /* ---------- smooth scroll ---------- */
   var lenis = null;
